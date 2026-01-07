@@ -10,9 +10,8 @@ manifest:
   - name: zmk
     remote: zmkfirmware
     import: app/west.yml
-  - name: zmk-config-handwired-skeletyl
-    url: https://github.com/cyanindya/zmk-config-handwired-skeletyl
-    revision: master
-    path: modules/zmk-config-handwired-skeletyl
-  self:
-    path: config
+# Local shield definition - moved to boards/shields/skeletyl/
+#  - name: zmk-config-handwired-skeletyl
+#    url: https://github.com/cyanindya/zmk-config-handwired-skeletyl
+#    revision: master
+#    path: modules/zmk-config-handwired-skeletyl

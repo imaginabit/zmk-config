@@ -1,0 +1,20 @@
+#include "skeletyl.dtsi"
+
+// if you're using the Amoeba PCBs, you may want to put the GPIO_PULL_DOWN in the
+// col-gpios instead
+
+&kscan0 {
+    row-gpios
+        = <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // R1 (A0) -> P0_03
+        , <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // R2 -> P0_02
+        , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // R3 -> P1_15
+        , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // R4 -> P0_09
+        ;
+    col-gpios
+        = <&pro_micro 20 (GPIO_ACTIVE_HIGH)> // C1 (A2) -> P0_28
+        , <&pro_micro 10 (GPIO_ACTIVE_HIGH)> // C2 -> P1_04
+        , <&pro_micro 6 (GPIO_ACTIVE_HIGH)> // C3 -> P1_13
+        , <&pro_micro 7 (GPIO_ACTIVE_HIGH)> // C4 -> P1_11
+        , <&pro_micro 8 (GPIO_ACTIVE_HIGH)> // C5 -> P0_10
+        ;
+};
