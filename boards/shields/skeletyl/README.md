@@ -22,6 +22,7 @@ This local shield includes the following files:
 ## Pin Configuration
 
 ### Rows (GPIO_PULL_DOWN)
+
 | Function | Pro Micro | nice!nano v2 | Zephyr GPIO |
 |---------|-----------|--------------|-------------|
 | R1      | 18        | 18           | P0_03       |
@@ -30,6 +31,7 @@ This local shield includes the following files:
 | R4      | 9         | 12           | P0_09       |
 
 ### Columns (GPIO_ACTIVE_HIGH)
+
 | Function | Pro Micro | nice!nano v2 | Zephyr GPIO |
 |---------|-----------|--------------|-------------|
 | C1      | 20        | 19           | P0_28       |
@@ -39,6 +41,7 @@ This local shield includes the following files:
 | C5      | 8         | 11           | P0_10       |
 
 ### UART Communication (Split)
+
 | Signal | Pro Micro | nice!nano v2 | Zephyr GPIO |
 |--------|-----------|--------------|-------------|
 | TX     | 1         | 1            | P0_06       |
@@ -47,7 +50,8 @@ This local shield includes the following files:
 ## Matrix Layout
 
 ### Left Half (20 keys)
-```
+
+```text
      C1    C2    C3    C4    C5
      ────  ────  ────  ────  ────
 R1   Q     W     E     R     T
@@ -57,7 +61,8 @@ R4   ESC   TAB   SPACE RET   BSPC
 ```
 
 ### Right Half (20 keys)
-```
+
+```text
      C1    C2    C3    C4    C5
      ────  ────  ────  ────  ────
 R1   Y     U     I     O     P
@@ -79,6 +84,7 @@ west build -p -b nice_nano_v2 -- -DSHIELD=skeletyl_right
 ```
 
 Or using the build matrix:
+
 ```bash
 west build -p --board-file build.yaml
 ```
