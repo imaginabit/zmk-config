@@ -10,7 +10,7 @@ manifest:
   - name: zmk
     remote: zmkfirmware
     import: app/west.yml
-# Local shield definition - moved to boards/shields/skeletyl/
+# Local shield definition - moved to boards/shields/skeletyl/ (FIX: added display-name)
 #  - name: zmk-config-handwired-skeletyl
 #    url: https://github.com/cyanindya/zmk-config-handwired-skeletyl
 #    revision: master
