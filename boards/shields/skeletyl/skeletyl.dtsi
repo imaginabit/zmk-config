@@ -26,6 +26,7 @@ RC(2,0) RC(2,1) RC(2,2)                         RC(2,3) RC(2,4)
         compatible = "zmk,physical-layout";
         layout_0 {
             compatible = "zmk,physical-layout-key-bounce";
+            display-name = "Default";
             columns = <5>;
             rows = <4>;
         };
