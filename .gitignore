@@ -1,3 +1,5 @@
 
 .zmk/
 token
+zephyr/
+config/build
