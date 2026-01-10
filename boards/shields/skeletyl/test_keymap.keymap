@@ -1,0 +1,23 @@
+/*
+ * TEST KEYMAP - Para verificar mapeo de teclas
+ * Presiona cada tecla y observa la salida UART
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/zmk.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        test_layer {
+            bindings = <
+&kp F1   &kp F2   &kp F3   &kp F4   &kp F5
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10
+&kp F11  &kp F12  &kp ESC  &kp TAB  &kp RET
+&kp DEL  &kp BSPC &kp SPACE &kp MINUS &kp EQUAL
+            >;
+        };
+    };
+};
