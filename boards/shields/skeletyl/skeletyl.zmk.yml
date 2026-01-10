@@ -10,3 +10,6 @@ features:
 siblings:
   - skeletyl_left
   - skeletyl_right
+zmk:
+  studio:
+    compatible: true
