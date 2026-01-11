@@ -4,6 +4,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
+        zmk,physical-layout = &skeletyl_layout;
     };
 
     default_transform: keymap_transform_0 {
@@ -22,14 +23,11 @@ RC(2,0) RC(2,1) RC(2,2)                         RC(2,3) RC(2,4)
         >;
     };
 
-    physical_layouts {
+    skeletyl_layout: skeletyl_layout {
         compatible = "zmk,physical-layout";
-        layout_0 {
-            compatible = "zmk,physical-layout-key-bounce";
-            display-name = "Default";
-            columns = <5>;
-            rows = <4>;
-        };
+        display-name = "Skeletyl";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
     };
 
     kscan0: kscan {
